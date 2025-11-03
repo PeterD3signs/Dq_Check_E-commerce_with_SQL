@@ -2,40 +2,33 @@
 
 ## Check 1:
 
-This check is done to find missing values in any of the columns. It measures Completeness.
-
-It returns a table with the cumulative number of missing entries and the severity of missing data.
-It also returns a cumulative (both all and unique) count of entries with a Warning or a Critical state
+This check is done to find missing values in any of the columns. It measures Completeness.  
+  
+It returns a table with the cumulative number of missing entries and the severity of missing data.  
+It also returns a cumulative (both all and unique) count of entries with a Warning or a Critical state,  
 
 Example:
 Column name | Number of missing entries | Severity 
 --- | --- | --- 
 col A | 0 | All Ok
---- | --- | --- 
 col B | 10 | Warning
---- | --- | --- 
 col C | 20 | Critical
---- | --- | --- 
 col D | 50 | Warning
---- | --- | --- 
 total | 60 | Warning
---- | --- | --- 
 total unique | 55 | Warning
---- | --- | --- 
 total | 20 | Critical
---- | --- | --- 
 total unique | 20 | Critical
 
-The severity is marked as follows:
-Lack of: "InvoiceNo", "StockCode", "Quantity", "InvoiceDate", "UnitPrice" - Critical
-Lack of: "Country", "CustomerID", "Description" - Warning
-
+The severity is marked as follows:  
+Lack of: "InvoiceNo", "StockCode", "Quantity", "InvoiceDate", "UnitPrice" - Critical  
+Lack of: "Country", "CustomerID", "Description" - Warning  
+  
 
 ## Check 2:
 
-This check is done to find incorrect values. It measures Validity.
+This check is done to find incorrect values. It measures Validity.  
 
-Similarly to check nr one, this returns the cumulative numbers for incorrect values (for all columns that can be reliably checked), together with cumulative totals.
+Similarly to check nr one, this returns the cumulative numbers for incorrect values (for all columns that can be reliably checked), together with cumulative totals.  
 
 Values that are considered incorrect are:
 
@@ -47,7 +40,7 @@ Values that are considered incorrect are:
 - for others - no check (pointless / impossible).
 
 NOTES:
-1. Incomplete values are not checked here at all. This is the task for "Check 1".
+1. Incomplete values are not checked here at all. This is the task for "Check 1".  
 2. CountriesWeShipTo is a table made up for this exercise. For real life scenarios,
 it can either be created on the spot or just skipped, depending on the QA focus.
 
