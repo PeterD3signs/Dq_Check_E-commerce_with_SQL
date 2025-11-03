@@ -21,7 +21,9 @@ WHERE
     OR "UnitPrice" < 0
     OR "InvoiceDate" < TIMESTAMP '2010-01-01 00:00:00'
     OR "InvoiceDate" > NOW()
-
+-- Important:
+-- NULL OR TRUE == TRUE OR NULL => TRUE;
+-- FALSE AND NULL == NULL AND FALSE => FALSE;
 UNION ALL
 
 SELECT 'Warning' AS category,
