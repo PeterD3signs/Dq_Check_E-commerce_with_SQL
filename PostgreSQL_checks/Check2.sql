@@ -149,7 +149,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 
--- Run the check:
+-- Run the check (args can be adjusted as needed, I chose those because biger values appear to be outliers):
 SELECT 
   column_name AS "Column Name",
   invalid_count AS "Number of Invalid Entries",
