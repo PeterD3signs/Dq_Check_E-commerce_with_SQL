@@ -1,0 +1,13 @@
+# A very quick "just in case" .gitignore file
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Backup and temp files
+*~
+*.swp
