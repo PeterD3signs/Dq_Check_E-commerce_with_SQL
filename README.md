@@ -4,16 +4,25 @@ This is a very simple project including 5 examples of quality checks for given E
 For each check, the following is provided:
 1. What is verified?
 2. What data quality dimension is checked (completness / validity / uniqueness / usefulness)
-3. SQL logic (both in pure SQL and in PL/SQL)
+3. SQL logic (both in pure SQL and in PostgreSQL)
 4. Severity (either "warning" or "critical")
 
-Data source:  https://www.kaggle.com/datasets/carrie1/ecommerce-data
+## Repo structure
+
+In 'PostgreSQL_checks/' there are the procedural versions for the checks together with
+code that was used to create the tables for testing purpouses (testing done on Supabase.com).
+
+In 'vanilla_SQL_checks/' there are the vanilla SQL versions of the checks provided.
+
+The detailed explenation of what exactly each check does can be found in 'Checks.md'.
 
 ## Data structure
 
 Column name: | InvoiceNo | StockCode | Description | Quantity | InvoiceDate | UnitPrice | CustomerID | Country |
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
 Data type: | String | String | String | Number | DateTime | Number | ID | String |
+
+Data source:  https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
 ## Important notes
 
