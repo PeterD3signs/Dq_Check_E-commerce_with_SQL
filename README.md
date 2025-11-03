@@ -9,9 +9,9 @@ For each check, the following is provided:
 
 ## Repo structure
 
-In "<ins>PostgreSQL_checks/</ins>" there are the procedural versions for the checks.
-In "<ins>vanilla_SQL_checks/</ins>" there are the vanilla SQL versions of the checks provided.
-In "<ins>DatabaseSetup/</ins>" there is the SQL setup for a mock PostgreSQL database ( I decided to test it on Supabase.com)
+In "<ins>PostgreSQL_checks/</ins>" there are the procedural versions for the checks.  
+In "<ins>vanilla_SQL_checks/</ins>" there are the vanilla SQL versions of the checks provided.  
+In "<ins>DatabaseSetup/</ins>" there is the SQL setup for a mock PostgreSQL database ( I decided to test it on Supabase.com).    
 
 In both folders mentioned above a "<ins>returnedValues.md</ins>" file can be found,  
 with info about tables returned after performing the check on the data on Supabase.
