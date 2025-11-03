@@ -41,3 +41,12 @@ Potential problem | Number of Duplicates | Percentage of affected data | Severit
 InvoiceNo with Multiple Dates | 43 | 0.01% | Critical
 Fully Identical Rows | 4879 | 0.90% | Warning
 
+## Check 4:
+
+Data entries | Number of occurrences | Percentage of whole data
+--- | --- | --- 
+Critical | 2 | 0.00%
+Warning | 135681 | 25.04%
+Any Missing | 135080 | 24.93%
+Any Wrong | 821 | 0.15%
+Fully OK | 406226 | 74.96%

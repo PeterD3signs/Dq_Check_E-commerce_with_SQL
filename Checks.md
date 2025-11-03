@@ -70,6 +70,24 @@ It returns the % of fully correct entries, the % of entries with missing values,
 
 It speaks about the general Usefulness of the data.
 
+### Quick recap:
+Critical:
+- missing "InvoiceNo", "StockCode", "Quantity", "InvoiceDate", "UnitPrice";
+- wrong data in:
+    1. "InvoiceNo" (values smaller than 0).
+    2. "customerID" (values smaller than 0).
+    3. "UnitPrice" (values smaller than 0).
+    4. "InvoiceDate" (date before minDate (passed as an arg), or after NOW()).
+
+Warning:
+- missing "Country", "CustomerID", "Description";
+- wrong data in:
+    1. "Quantity" (values smaller or bigger than passed args).
+    3. "UnitPrice" (values bigger than an arg maxUnitPrice).
+    4. "County" (country not present on CountriesWeShipTo table).
+
+Note:
+- This Check can be thought as a cumilative (less precise) Check 1 and 2. It does not include Check 3 functionality.
 
 ## Check 5:
 
