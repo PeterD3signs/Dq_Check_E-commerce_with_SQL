@@ -13,10 +13,9 @@ In "<ins>PostgreSQL_checks/</ins>" there are the procedural versions for the che
 In "<ins>vanilla_SQL_checks/</ins>" there are the vanilla SQL versions of the checks provided.  
 In "<ins>DatabaseSetup/</ins>" there is the SQL setup for a mock PostgreSQL database ( I decided to test it on Supabase.com).    
 
-In both checks folders a "<ins>returnedValues.md</ins>" file can be found,  
-with info about tables returned after performing the check on the data on Supabase.
+"<ins>Checks.md</ins>" contains the detailed explenation of what exactly is done by each check.  
+"<ins>returnedValues.md</ins>" contains what was returned after each query during testing on Supabase.com (the same values were returned both for PostgreSQL and vanilla SQL checks). 
 
-The detailed explenation of what exactly is done by each check can be found in "<ins>Checks.md</ins>".  
 
 ## Data structure
 
