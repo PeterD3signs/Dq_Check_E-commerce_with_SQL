@@ -32,3 +32,12 @@ Total (Critical) | 2 | Critical
 Total (warning) | 819 | Warning
 Total Unique (Critical) | 2 | Critical
 Total Unique (Warning) | 819 | Warning
+
+
+## Check 3:
+
+Potential problem | Number of Duplicates | Percentage of affected data | Severity 
+--- | --- | --- | ---
+InvoiceNo with Multiple Dates | 43 | 0.01% | Critical
+Fully Identical Rows | 4879 | 0.90% | Warning
+
