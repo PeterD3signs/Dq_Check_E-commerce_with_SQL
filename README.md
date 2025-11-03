@@ -9,12 +9,12 @@ For each check, the following is provided:
 
 ## Repo structure
 
-In <sub>PostgreSQL_checks/<sub> there are the procedural versions for the checks together with
+In <sub>PostgreSQL_checks/</sub> there are the procedural versions for the checks together with
 code that was used to create the tables for testing purpouses (testing done on Supabase.com).
 
-In <sub>vanilla_SQL_checks/<sub> there are the vanilla SQL versions of the checks provided.
+In <sub>vanilla_SQL_checks/</sub> there are the vanilla SQL versions of the checks provided.
 
-The detailed explenation of what exactly each check does can be found in <sub>Checks.md<sub>.
+The detailed explenation of what exactly each check does can be found in <sub>Checks.md</sub>.
 
 ## Data structure
 
