@@ -99,5 +99,8 @@ where further insight is needed.
 This is the simplest of the queries, but it is still important, as it helps to understand
 some context behind why data is presented in a particular fashion.
 
+Note:
+- There is no point to create a custom procedure for a functionality that is this simple, so even in PostgreSQL the check is jus vanilla SQL.
+
 
 

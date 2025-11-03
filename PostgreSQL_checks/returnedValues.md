@@ -50,3 +50,10 @@ Warning | 135681 | 25.04%
 Any Missing | 135080 | 24.93%
 Any Wrong | 821 | 0.15%
 Fully OK | 406226 | 74.96%
+
+## Check 5:
+
+id | InvoiceNo | StockCode | Description | Quantity | InvoiceDate | UnitPrice | CustomerID | Country |
+--- | --- | --- | --- | --- | --- | --- | --- | --- |
+299984 | A563186 | B | Adjust bad debt | 1 | 2011-08-12 14:51:00+00 | -11062.06 | NULL | United Kingdom |
+299985 | A563187 | B | Adjust bad debt | 1 | 2011-08-12 14:52:00+00 | -11062.06 | NULL | United Kingdom |
