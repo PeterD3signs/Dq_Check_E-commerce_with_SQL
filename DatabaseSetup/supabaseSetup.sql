@@ -17,6 +17,9 @@ CREATE TABLE IF NOT EXISTS Sales (
     Country TEXT
 );
 
+
+
+
 -- Indexes 
 CREATE INDEX IF NOT EXISTS idx_sales_invoiceno   ON Sales(InvoiceNo);
 CREATE INDEX IF NOT EXISTS idx_sales_invoicedate ON Sales(InvoiceDate);
@@ -24,6 +27,9 @@ CREATE INDEX IF NOT EXISTS idx_sales_customer    ON Sales(CustomerID);
 CREATE INDEX IF NOT EXISTS idx_sales_country     ON Sales(Country);
 
 CREATE INDEX IF NOT EXISTS idx_country_name ON CountriesWeShipTo (country_name);
+
+
+
 
 -- RLS & Policies
 ALTER TABLE Sales ENABLE ROW LEVEL SECURITY;
@@ -40,6 +46,9 @@ CREATE POLICY "Allow service role to read CountriesWeShipTo"
   FOR SELECT
   TO service_role
   USING (true);
+
+
+
 
 -- Insert example countries
 INSERT INTO CountriesWeShipTo (country_code, country_name)
@@ -62,6 +71,9 @@ ON CONFLICT DO NOTHING;
 -- COPY Sales(InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country)
 -- FROM 'url_to_csv_file'
 -- WITH (FORMAT csv, HEADER true);
+
+
+
 
 -- Make colums capitalization consistent:
 ALTER TABLE Sales
@@ -87,3 +99,17 @@ ALTER TABLE Sales
 
 ALTER TABLE Sales
   RENAME COLUMN country TO "Country";
+
+
+
+
+-- -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+-- Insert either vanila SQL cheks or procedural checks here
+-- -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+
+
+
+-- Run procedures (only for PostgreSQL):
+-- SELECT * FROM dq_check_missing_values();
+--
