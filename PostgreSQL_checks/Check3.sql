@@ -27,7 +27,7 @@ BEGIN
 
     column_name := 'InvoiceNo with Multiple Dates';
     duplicate_count := cnt;
-    percentage := CASE WHEN total_rows = 0 THEN '0%' ELSE ROUND((cnt::NUMERIC / total_rows) * 100, 2)::TEXT || '%';
+    percentage := CASE WHEN total_rows = 0 THEN '0%' ELSE ROUND((cnt::NUMERIC / total_rows) * 100, 2)::TEXT || '%' END;
     severity := CASE WHEN cnt = 0 THEN 'All OK' ELSE 'Critical' END;
     RETURN NEXT;
 
@@ -44,7 +44,7 @@ BEGIN
 
     column_name := 'Fully Identical Rows';
     duplicate_count := cnt;
-    percentage := CASE WHEN total_rows = 0 THEN '0%' ELSE ROUND((cnt::NUMERIC / total_rows) * 100, 2)::TEXT || '%';
+    percentage := CASE WHEN total_rows = 0 THEN '0%' ELSE ROUND((cnt::NUMERIC / total_rows) * 100, 2)::TEXT || '%' END;
     severity := CASE WHEN cnt = 0 THEN 'All OK' ELSE 'Warning' END;
     RETURN NEXT;
 
