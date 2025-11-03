@@ -14,10 +14,10 @@ col A | 0 | All Ok
 col B | 10 | Warning
 col C | 20 | Critical
 col D | 50 | Warning
-total | 60 | Warning
-total unique | 55 | Warning
-total | 20 | Critical
-total unique | 20 | Critical
+total warings | 60 | Warning
+total unique warnings | 55 | Warning
+total critical | 20 | Critical
+total unique critical | 20 | Critical
 
 The severity is marked as follows:  
 Lack of: "InvoiceNo", "StockCode", "Quantity", "InvoiceDate", "UnitPrice" - Critical  
