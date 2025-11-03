@@ -1,3 +1,4 @@
+-- procedure for Check 1:
 CREATE OR REPLACE FUNCTION dq_check_missing_values()
 RETURNS TABLE(column_name TEXT, missing_count BIGINT, severity TEXT)
 AS $$
@@ -90,3 +91,11 @@ BEGIN
 
 END;
 $$ LANGUAGE plpgsql;
+
+
+-- Run the check:
+SELECT 
+  column_name AS "Column Name",
+  missing_count AS "Number of Missing Entries",
+  severity AS "Severity"
+FROM dq_check_missing_values();

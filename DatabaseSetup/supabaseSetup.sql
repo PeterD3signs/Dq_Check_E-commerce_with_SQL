@@ -50,19 +50,45 @@ CREATE POLICY "Allow service role to read CountriesWeShipTo"
 
 
 
--- Insert example countries
+-- Insert example countries (based on original dataset)
 INSERT INTO CountriesWeShipTo (country_code, country_name)
 VALUES
-    ('GB', 'United Kingdom'),
-    ('US', 'United States'),
+    ('AU', 'Australia'),
+    ('AT', 'Austria'),
+    ('BH', 'Bahrain'),
+    ('BE', 'Belgium'),
+    ('BR', 'Brazil'),
+    ('CA', 'Canada'),
+    ('CI', 'Channel Islands'),
+    ('CY', 'Cyprus'),
+    ('CZ', 'Czech Republic'),
+    ('DK', 'Denmark'),
+    ('IE', 'EIRE'),
+    ('FI', 'Finland'),
     ('FR', 'France'),
     ('DE', 'Germany'),
-    ('ES', 'Spain'),
+    ('GR', 'Greece'),
+    ('HK', 'Hong Kong'),
+    ('IS', 'Iceland'),
+    ('IL', 'Israel'),
     ('IT', 'Italy'),
+    ('JP', 'Japan'),
+    ('LB', 'Lebanon'),
+    ('LT', 'Lithuania'),
+    ('MT', 'Malta'),
     ('NL', 'Netherlands'),
-    ('SE', 'Sweden'),
     ('NO', 'Norway'),
-    ('FI', 'Finland')
+    ('PL', 'Poland'),
+    ('PT', 'Portugal'),
+    ('ZA', 'RSA'),
+    ('SA', 'Saudi Arabia'),
+    ('SG', 'Singapore'),
+    ('ES', 'Spain'),
+    ('SE', 'Sweden'),
+    ('CH', 'Switzerland'),
+    ('AE', 'United Arab Emirates'),
+    ('GB', 'United Kingdom'),
+    ('US', 'USA')
 ON CONFLICT DO NOTHING;
 
 -- CSV data copied manually (using Supabase interface)
@@ -106,10 +132,3 @@ ALTER TABLE Sales
 -- -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 -- Insert either vanila SQL cheks or procedural checks here
 -- -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-
-
-
-
--- Run procedures (only for PostgreSQL):
--- SELECT * FROM dq_check_missing_values();
---
