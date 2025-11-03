@@ -16,6 +16,7 @@ In "<ins>DatabaseSetup/</ins>" there is the SQL setup for a mock PostgreSQL data
 "<ins>checks.md</ins>" contains the detailed explenation of what exactly is done by each check.  
 "<ins>returnedValues.md</ins>" contains what was returned after each query during testing on Supabase.com (the same values were returned both for PostgreSQL and vanilla SQL checks). 
 
+I encourage browsing the PostgresSQL instead of vanila SQL as it is much more readable and the functionality is same.
 
 ## Data structure
 
